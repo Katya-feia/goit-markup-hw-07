@@ -9,3 +9,31 @@
 .sec-benefits-item{
     width: 270px;
 }
+
+.benefits-icon-box{
+    width: 270px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-light);
+    border-radius: 4px;
+}
+
+.sec-benefits-tit {
+    font-weight: 700;
+font-size: 14px;
+line-height: calc(16/14);
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-bottom: 10px;
+margin-top: 30px;
+}
+
+.sec-benefits-text {
+    font-weight: 400;
+font-size: 14px;
+line-height: calc(24/14);
+letter-spacing: 0.03em;
+color: var(--nt-color);
+}

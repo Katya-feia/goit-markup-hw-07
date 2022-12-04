@@ -2,12 +2,25 @@
 
 @import'./utils/reset';
 
-@import'./components/_container';
+@import'./utils/hidden';
 
-@import'./components/_logo';
+@import'./components/container';
 
-@import'./components/_page-header';
+@import'./components/logo';
 
-@import'./components/_hero';
+@import'./components/page-header';
 
-@import'./components/_benefits';
+@import'./components/hero';
+
+@import'./components/benefits';
+
+@import'./components/do';
+
+@import'./components/team';
+
+@import'./components/clients';
+
+@import'./components/page-footer';
+
+@import'./components/modal';
+
