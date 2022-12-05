@@ -32,6 +32,11 @@
     align-items: center;
     justify-content: center;
     transition: color 250ms var(--timing-function), border 250ms var(--timing-function);
+    &:hover,
+    &:focus{
+        border: 1px solid var(--blue);
+        color: var(--blue);
+    };
 }
 .cleints-icon {
     fill: currentColor;
