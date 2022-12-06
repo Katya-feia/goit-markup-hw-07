@@ -67,6 +67,10 @@ transition: transform 200ms var(--timing-function) 500ms;
     background-color: var(--wight);
     color: #000000;
     transition: color 250ms var(--timing-function);
+    &:hover,
+    &:focus{
+        color: var(--blue);
+    };
 }
 
 .modal-icon{
