@@ -12,19 +12,19 @@
     
 }
 
-.l-header{
+.header__logoer{
     color: #000000;
 }
-.header-nav{
+.header__nav{
     display: flex;
     gap: 50px;
     margin-left: 93px;
 }
-.header-nav .header-nav-link{
+.header__nav .header__link{
     position: relative;
 }
 
-.header-nav-link.current{
+.header__link.current{
     color: var(--blue);
     &::after{
         position: absolute;
