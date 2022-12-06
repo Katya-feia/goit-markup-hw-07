@@ -379,7 +379,7 @@ button {
   background: var(--wight);
 }
 
-.sec-clients-tit {
+.clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1666666667;
@@ -388,18 +388,18 @@ button {
   margin-bottom: 50px;
 }
 
-.sec-clients-list {
+.clients__list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.sec-clients-items {
+.clients__items {
   width: 170px;
   height: 92px;
 }
 
-.sec-clients-link {
+.clients__link {
   width: 100%;
   height: 100%;
   background-color: var(--wight);
@@ -411,12 +411,12 @@ button {
   justify-content: center;
   transition: color 250ms var(--timing-function), border 250ms var(--timing-function);
 }
-.sec-clients-link:hover, .sec-clients-link:focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px solid var(--blue);
   color: var(--blue);
 }
 
-.cleints-icon {
+.cleints__icon {
   fill: currentColor;
 }
 
@@ -427,7 +427,7 @@ button {
 }
 
 .l-footer {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer-content {
@@ -547,9 +547,11 @@ button {
 .footer-input:focus {
   border-color: var(--blue);
 }
-
-.footer-label:hover .footer-input,
-.footer-label:focus .footer-input {
+.footer-input:-webkit-autofill {
+  box-shadow: inset 0 0 0 50px var(--gray-dark);
+  -webkit-text-fill-color: var(--wight);
+}
+.footer-label:hover .footer-input, .footer-label:focus .footer-input {
   border-color: var(--blue);
   cursor: pointer;
 }
@@ -590,7 +592,7 @@ button {
   transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 .sec-filter-bt:hover, .sec-filter-bt:focus, .sec-filter-bt:active {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: var(--blue);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   border: none;
@@ -613,9 +615,9 @@ button {
 
 .sec-projects-cart {
   padding: 20px 24px;
-  border-bottom: 1px solid #EEEEEE;
-  border-left: 1px solid #EEEEEE;
-  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .sec-projects-nome {
@@ -664,7 +666,6 @@ button {
   transform: translateY(101%);
   transition: transform 500ms var(--timing-function);
 }
-
 .sec-projects-item:hover .projects-overlay {
   transform: translateY(0);
 }
@@ -752,12 +753,9 @@ button {
   color: var(--mt-color);
   transition: color 2500ms var(--timing-function);
 }
-
-.form-label:focus,
-.form-label:active {
+.form-label:focus, .form-label:active {
   color: var(--blue);
 }
-
 .form-label:nth-of-type(4n) {
   margin-bottom: 0;
 }
@@ -766,15 +764,20 @@ button {
 .comment-area {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
-
-.form-input,
-.comment-area {
   transition: border-color 250ms var(--timing-function);
+}
+.form-input:focus,
+.comment-area:focus {
+  border-color: var(--blue);
+  cursor: pointer;
 }
 
 .form-input {
   padding: 12px 42px 12px;
+}
+.form-input:-webkit-autofill {
+  box-shadow: inset 0 0 0 50px var(--wight);
+  -webkit-text-fill-color: var(--mt-color);
 }
 
 .form-icon {
@@ -783,6 +786,9 @@ button {
   left: 12px;
   fill: currentColor;
   transition: fill 250ms var(--timing-function);
+}
+.form-input:focus + .form-icon {
+  fill: var(--blue);
 }
 
 .form-input,
@@ -820,6 +826,10 @@ button {
   border: 2px solid var(--mt-color);
   transition: border-color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
+.check-input:checked + .check-icon {
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
 
 .check-text {
   font-weight: 400;
@@ -840,11 +850,6 @@ button {
   overflow: hidden;
 }
 
-input:-webkit-autofill {
-  box-shadow: inset 0 0 0 50px var(--wight);
-  -webkit-text-fill-color: var(--mt-color);
-}
-
 .check-link {
   font-weight: 400;
   font-size: 14px;
@@ -863,38 +868,20 @@ input:-webkit-autofill {
   background-color: var(--blue);
 }
 
-.form-input:focus,
-.comment-area:focus {
-  border-color: var(--blue);
-  cursor: pointer;
-}
-
-.form-input:focus + .form-icon {
-  fill: var(--blue);
-}
-
 .comment-area {
   resize: none;
   padding: 12px 16px;
 }
-
 .comment-area::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .comment-area:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .comment-area::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
 .form-bt {
   padding: 10px 52px;
-}
-
-.check-input:checked + .check-icon {
-  background-color: var(--blue);
-  border-color: var(--blue);
 }/*# sourceMappingURL=main.css.map */
